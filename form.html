@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>入力フォームの実装と制御</title>
+	<link rel="stylesheet" href="">
+
+	<!-- script -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+
+</head>
+<body style="background-color: #888">
+	
+	<h1>入力フォーム</h1>
+	<!-- 入力フォームの実装 -->
+	<form action="#">
+	<h2>未完成</h2>
+		<p>
+			要素の制御A-Z：<input type="name" size="20" required="[A-Z]*">
+		</p>
+
+
+
+		<p>
+			名前：<input type="name=" name="name" size="10" required>※入力必須
+		</p>
+		<p>
+			性別：<input type="radio" name="gender" value="male">男
+			<input type="radio" name="gender" value="female">女
+			<input type="radio" name="gender" value="その他">その他
+		</p>
+
+		<p>
+			血液型：<select name="bloodType" id="">
+				<option value="A">A型</option>
+				<option value="B">B型</option>
+				<option value="O">O型</option>
+				<option value="AB">AB型</option>
+			</select>
+		</p>
+
+		<p>
+			ご感想：<br>
+			<textarea name="impression" id="" cols="50" rows="10"></textarea>
+		</p>
+
+		<input type="submit" value="送信"><input type="reset" value="リセット">
+	</form>
+
+	<form action="#">
+		<input type="text" name="mytext"><br>
+		<input type="submit" value="送信">
+	</form>
+</body>
+
+</html>
